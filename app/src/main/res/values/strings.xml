@@ -1,9 +1,40 @@
 <resources>
+
     <string name="app_name">Portifile</string>
-    <string name="target">
-        Como desenvolvedor android prestei serviços ao banco Santander
-        onde realizei serviços extração de módulos, troca de certificados digitais,
-        documentação de procedimentos correções de bugs ocorridos em produção.
-    </string>
+    <string name="user_name">Cleiton Lopes Braga</string>
     <string name="title_activity_splash">SplashActivity</string>
+
+    <string name="target">
+       Durante meu tempo como desenvolvedor na empresa Inmetrics prestei serviço ao Banco Santander
+       onde participei do time responsável pela correção de bugs o que levou a um crescimento da nota do app Santander
+       Empresas para 4.9 na playstore. Além disso, desenvolvi onboarding para os novos desenvolvedores que
+       entrassem no projeto contribuindo à organização da empresa no tempo de ambientação ao trabalho.
+    </string>
+
+    //LINGUAGENS
+    <string name="linguagens">Linguagens</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="Java">Java</string>
+
+    //FRAMEWORKS
+    <string name="framesorks">Frameworks</string>
+    <string name="Retrofit">Retrofit</string>
+    <string name="Room">Room</string>
+    <string name="Rxjava">Rxjava</string>
+    <string name="Coroutines">Coroutines</string>
+    <string name="Jetpack">Jetpack Compose</string>
+
+    //Arquiteturas
+    <string name="arquiteturas">Arquiteturas</string>
+    <string name="mvc">MVC</string>
+    <string name="mvvm">MVVVM</string>
+
+    //Testes
+    <string name="testes">Testes</string>
+    <string name="junit">Junit</string>
+    <string name="mockito">Mockito</string>
+
+    //Labels
+    <string name="circular_shape">circular progress value"</string>
+
 </resources>

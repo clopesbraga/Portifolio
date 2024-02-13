@@ -27,9 +27,11 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.cleitonportifile.R
 import com.example.cleitonportifile.model.SkillsModel
 import kotlinx.coroutines.delay
 
@@ -64,7 +66,7 @@ fun rowLine(lineName : String,skills: List<SkillsModel>){
         )
         Icon(
             imageVector = Icons.Filled.KeyboardArrowRight,
-            contentDescription = "seta de hagilidades"
+            contentDescription = "seta de habilidades"
         )
     }
     animatedSkillsLine(skills,isShowSkills)
@@ -95,7 +97,7 @@ fun animatedSkillsLine(skills: List<SkillsModel>,isShowSkills : Boolean){
                     }
                     val animatedCircularValue by animateFloatAsState(
                         targetValue = level,
-                        label = "circular progress value",
+                        label = stringResource(id = R.string.circular_shape),
                         animationSpec = keyframes {
                             this.durationMillis = 500
                         }

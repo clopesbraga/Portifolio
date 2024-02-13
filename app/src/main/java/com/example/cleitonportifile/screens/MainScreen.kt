@@ -51,7 +51,7 @@ fun MainScreen() {
 
             Image(
                 painter = painterResource(id = R.drawable.foto_perfil),
-                contentDescription = "Cleiton Lopes Braga",
+                contentDescription = stringResource(id = R.string.user_name),
                 modifier = Modifier
                     .size(100.dp)
                     .clip(CircleShape)
@@ -76,7 +76,7 @@ fun MainScreen() {
             ) {
 
                 Text(
-                    text="Cleiton Lopes Braga",
+                    text= stringResource(id = R.string.user_name),
                     modifier = Modifier.align(Alignment.CenterHorizontally),
                     textAlign = TextAlign.Justify,
                     fontSize = 24.sp,
@@ -86,7 +86,7 @@ fun MainScreen() {
                 Text(
                     text = stringResource(id = R.string.target),
                     Modifier.fillMaxWidth(),
-                    textAlign = TextAlign.Center,
+                    textAlign = TextAlign.Justify,
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Light
                 )
@@ -96,13 +96,4 @@ fun MainScreen() {
         }
 
     }
-
-
-
-
-
-
-
-
-
 }
