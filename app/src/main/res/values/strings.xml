@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Portifile</string>
+    <string name="target">
+        Como desenvolvedor android prestei serviços ao banco Santander
+        onde realizei serviços extração de módulos, troca de certificados digitais,
+        documentação de procedimentos correções de bugs ocorridos em produção.
+    </string>
+    <string name="title_activity_splash">SplashActivity</string>
+</resources>

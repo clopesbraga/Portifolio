@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name = "Theme.PortifileSplashTheme" parent = "Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/purple_500</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/jetpackicon</item>
+        <item name="postSplashScreenTheme">@style/Theme.CleitonPortifile</item>
+
+    </style>
+    <style name="Theme.CleitonPortifile" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>
