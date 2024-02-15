@@ -1,6 +1,5 @@
 package com.example.cleitonportifile.screens
 
-import android.graphics.drawable.Icon
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.keyframes
@@ -10,9 +9,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.KeyboardArrowRight
 import androidx.compose.material3.CircularProgressIndicator
@@ -28,7 +25,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.cleitonportifile.R
@@ -41,12 +37,12 @@ fun AnimationScreen(
     skills: List<SkillsModel> =listOf()
 ){
     Column {
-        sKillLine(nameskill,skills)
+        SKillLine(nameskill,skills)
     }
 }
 
 @Composable
-fun sKillLine(lineName : String,skills: List<SkillsModel>){
+fun SKillLine(lineName : String, skills: List<SkillsModel>){
 
     var isShowSkills by remember {
         mutableStateOf(false)
@@ -69,11 +65,11 @@ fun sKillLine(lineName : String,skills: List<SkillsModel>){
             contentDescription = "seta de habilidades"
         )
     }
-    skillsLineAnimation(skills,isShowSkills)
+    SkillsLineAnimation(skills,isShowSkills)
 }
 
 @Composable
-fun skillsLineAnimation(skills: List<SkillsModel>,isShowSkills : Boolean){
+fun SkillsLineAnimation(skills: List<SkillsModel>, isShowSkills : Boolean){
 
     AnimatedVisibility(visible = isShowSkills) {
 
