@@ -1,33 +1,37 @@
 package com.example.cleitonportifile.sample
 
 import com.example.cleitonportifile.model.SkillsModel
-import kotlin.random.Random
+
+
+private var BIGGER : Float = 0.3f
+private var MEDIUM : Float = 0.5f
+private var HIGH : Float = 0.9f
 
 val languageSkill = listOf(
-        SkillsModel(name ="Kotlin",level = Random.nextFloat()),
-        SkillsModel(name ="Java",level = Random.nextFloat()),
-        SkillsModel(name ="Git",level = Random.nextFloat())
+        SkillsModel(name ="Kotlin",level = HIGH),
+        SkillsModel(name ="Java",level = HIGH),
+        SkillsModel(name ="Git",level = HIGH)
     )
 
 val frameworkSkill = listOf(
-    SkillsModel(name ="Retrofit",level = Random.nextFloat()),
-    SkillsModel(name ="Room",level = Random.nextFloat()),
-    SkillsModel(name ="RXJava",level = Random.nextFloat()),
-    SkillsModel(name ="Coroutines",level = Random.nextFloat()),
-    SkillsModel(name ="JetPackCompose",level = Random.nextFloat())
+    SkillsModel(name ="Retrofit",level = HIGH),
+    SkillsModel(name ="Room",level =  HIGH),
+    SkillsModel(name ="RXJava",level =  MEDIUM),
+    SkillsModel(name ="Coroutines",level =  MEDIUM),
+    SkillsModel(name ="JetPackCompose",level =  BIGGER)
 )
 
 val arquitutureSkills = listOf(
-    SkillsModel(name ="MVC",level = Random.nextFloat()),
-    SkillsModel(name ="MVVM",level = Random.nextFloat()),
+    SkillsModel(name ="MVC",level =  HIGH),
+    SkillsModel(name ="MVVM",level = HIGH),
 )
 
 val testsSkills = listOf(
-    SkillsModel(name ="JUnit",level = Random.nextFloat()),
-    SkillsModel(name ="Mockito",level = Random.nextFloat()),
+    SkillsModel(name ="JUnit",level = MEDIUM),
+    SkillsModel(name ="Mockito",level = MEDIUM),
 )
 
 val observabilitySkills = listOf(
-    SkillsModel(name ="Google Analytics",level = Random.nextFloat()),
-    SkillsModel(name ="Crashlytics",level = Random.nextFloat()),
+    SkillsModel(name ="Google Analytics",level = MEDIUM),
+    SkillsModel(name ="Crashlytics",level = MEDIUM)
 )
