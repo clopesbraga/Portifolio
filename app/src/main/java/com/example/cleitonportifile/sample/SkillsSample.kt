@@ -23,8 +23,11 @@ val arquitutureSkills = listOf(
 )
 
 val testsSkills = listOf(
-
     SkillsModel(name ="JUnit",level = Random.nextFloat()),
     SkillsModel(name ="Mockito",level = Random.nextFloat()),
+)
 
+val observabilitySkills = listOf(
+    SkillsModel(name ="Google Analytics",level = Random.nextFloat()),
+    SkillsModel(name ="Crashlytics",level = Random.nextFloat()),
 )

@@ -39,9 +39,9 @@ fun MainScreen() {
                 .background(
                     brush = Brush.linearGradient(
                         listOf(
-                            Color(0xFF673AB7),
+                            Color(0xFF3E2723),
                             Color(0xFF2196F3),
-                            Color(0xFF009688),
+                            Color(0xFF00BFA5),
                         ),
                     )
                 )
@@ -89,6 +89,17 @@ fun MainScreen() {
                     textAlign = TextAlign.Justify,
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Light
+                )
+
+                Text(
+//                    text = stringResource(id = R.string.target),
+                    text="Minha Habilidades",
+                    Modifier
+                        .fillMaxWidth()
+                        .padding(12.dp),
+                    textAlign = TextAlign.Left,
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Bold
                 )
 
             }

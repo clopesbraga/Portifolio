@@ -29,6 +29,11 @@
     <string name="mvc">MVC</string>
     <string name="mvvm">MVVVM</string>
 
+    //Observância
+    <string name="observancia">Monitoramento</string>
+    <string name="analytics">Google analytics</string>
+    <string name="crashlytics">Crashlytics</string>
+
     //Testes
     <string name="testes">Testes</string>
     <string name="junit">Junit</string>

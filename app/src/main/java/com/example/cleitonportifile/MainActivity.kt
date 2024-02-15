@@ -16,6 +16,7 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.cleitonportifile.sample.arquitutureSkills
 import com.example.cleitonportifile.sample.frameworkSkill
 import com.example.cleitonportifile.sample.languageSkill
+import com.example.cleitonportifile.sample.observabilitySkills
 import com.example.cleitonportifile.sample.testsSkills
 import com.example.cleitonportifile.screens.AnimationScreen
 import com.example.cleitonportifile.screens.MainScreen
@@ -38,6 +39,7 @@ class MainActivity : ComponentActivity() {
                     AnimationScreen(stringResource(R.string.linguagens),languageSkill)
                     AnimationScreen(stringResource(R.string.framesorks),frameworkSkill)
                     AnimationScreen(stringResource(R.string.testes),testsSkills)
+                    AnimationScreen(stringResource(R.string.observancia), observabilitySkills)
                 }
             }
         }
@@ -58,6 +60,7 @@ fun PagePreview() {
             AnimationScreen(stringResource(R.string.linguagens),languageSkill)
             AnimationScreen(stringResource(R.string.framesorks),frameworkSkill)
             AnimationScreen(stringResource(R.string.testes),testsSkills)
+            AnimationScreen(stringResource(R.string.observancia), observabilitySkills)
         }
     }
 }

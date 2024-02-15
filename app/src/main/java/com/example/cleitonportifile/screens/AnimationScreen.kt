@@ -41,12 +41,12 @@ fun AnimationScreen(
     skills: List<SkillsModel> =listOf()
 ){
     Column {
-        rowLine(nameskill,skills)
+        sKillLine(nameskill,skills)
     }
 }
 
 @Composable
-fun rowLine(lineName : String,skills: List<SkillsModel>){
+fun sKillLine(lineName : String,skills: List<SkillsModel>){
 
     var isShowSkills by remember {
         mutableStateOf(false)
@@ -69,11 +69,11 @@ fun rowLine(lineName : String,skills: List<SkillsModel>){
             contentDescription = "seta de habilidades"
         )
     }
-    animatedSkillsLine(skills,isShowSkills)
+    skillsLineAnimation(skills,isShowSkills)
 }
 
 @Composable
-fun animatedSkillsLine(skills: List<SkillsModel>,isShowSkills : Boolean){
+fun skillsLineAnimation(skills: List<SkillsModel>,isShowSkills : Boolean){
 
     AnimatedVisibility(visible = isShowSkills) {
 
