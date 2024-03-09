@@ -91,17 +91,6 @@ fun MainScreen() {
                     fontWeight = FontWeight.Light
                 )
 
-                Text(
-//                    text = stringResource(id = R.string.target),
-                    text="Minha Habilidades",
-                    Modifier
-                        .fillMaxWidth()
-                        .padding(12.dp),
-                    textAlign = TextAlign.Left,
-                    fontSize = 18.sp,
-                    fontWeight = FontWeight.Bold
-                )
-
             }
 
         }

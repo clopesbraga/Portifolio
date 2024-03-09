@@ -32,9 +32,6 @@ import com.example.cleitonportifile.R
 import com.example.cleitonportifile.model.SkillsModel
 import kotlinx.coroutines.delay
 
-
-
-
 @Composable
 fun AnimationScreen(
     nameskill: String,
