@@ -2,9 +2,10 @@ package com.example.cleitonportifile.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -45,7 +46,7 @@ fun MainScreen() {
                     )
                 )
                 .height(250.dp)
-        ){
+        ) {
 
 
             Image(
@@ -57,16 +58,10 @@ fun MainScreen() {
                     .align(Alignment.Center)
             )
 
-            Column(
-                Modifier.padding(0.dp),
-                verticalArrangement = Arrangement.spacedBy(10.dp)
-            ) {
-
-            }
         }
 
-        BoxWithConstraints(
-            modifier = Modifier .fillMaxWidth()
+        Box(
+            modifier = Modifier.fillMaxWidth()
         ) {
             Column(
                 Modifier
@@ -75,35 +70,72 @@ fun MainScreen() {
             ) {
 
                 Text(
-                    text= stringResource(id = R.string.user_name),
+                    text = stringResource(id = R.string.user_name),
                     modifier = Modifier.align(Alignment.CenterHorizontally),
                     textAlign = TextAlign.Justify,
                     fontSize = 24.sp,
                     fontWeight = FontWeight.Bold
                 )
-
-                Text(
-                    text = stringResource(id = R.string.target),
-                    Modifier.fillMaxWidth(),
-                    textAlign = TextAlign.Justify,
-                    fontSize = 18.sp,
-                    fontWeight = FontWeight.Light
-                )
-
-                Text(
-//                    text = stringResource(id = R.string.target),
-                    text="Minha Habilidades",
-                    Modifier
-                        .fillMaxWidth()
-                        .padding(12.dp),
-                    textAlign = TextAlign.Left,
-                    fontSize = 18.sp,
-                    fontWeight = FontWeight.Bold
-                )
+                carrierDescription()
 
             }
+
 
         }
 
     }
+
+}
+
+
+@Composable
+fun carrierDescription() {
+
+    Column {
+
+        Row { formatDescription(R.string.target)}
+
+        Row { formatTitle(R.string.text_1_title) }
+        Row { formatDescription(R.string.text_1) }
+
+        Row { formatTitle(R.string.text_2_title) }
+        Row { formatDescription(R.string.text_2) }
+
+        Row { formatTitle(R.string.text_3_title) }
+        Row { formatDescription(R.string.text_3) }
+
+    }
+
+}
+
+@Composable
+fun formatTitle(subtitle: Int) {
+
+    Text(
+        text = stringResource(id = subtitle),
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(10.dp),
+        textAlign = TextAlign.Justify,
+        fontSize = 18.sp,
+        fontWeight = FontWeight.Bold
+
+    )
+
+}
+
+@Composable
+fun formatDescription(description: Int) {
+
+    Text(
+        text = stringResource(id = description),
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(10.dp),
+        textAlign = TextAlign.Justify,
+        fontSize = 18.sp,
+        fontWeight = FontWeight.Light
+
+    )
+
 }

@@ -109,6 +109,7 @@ fun SkillsLineAnimation(skills: List<SkillsModel>, isShowSkills : Boolean){
         }
 
     }
+    
 
 }
 
