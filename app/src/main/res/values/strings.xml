@@ -5,10 +5,45 @@
     <string name="title_activity_splash">SplashActivity</string>
 
     <string name="target">
-       Durante meu tempo como desenvolvedor na empresa Inmetrics prestei serviço ao Banco Santander
-       onde participei do time responsável pela correção de bugs o que levou a um crescimento da nota do app Santander
-       Empresas para 4.9 na playstore. Além disso, desenvolvi onboarding para os novos desenvolvedores que
-       entrassem no projeto contribuindo à organização da empresa no tempo de ambientação ao trabalho.
+       Trabalhando como desenvolvedor pela Inmetrics prestei serviço ao cliente Banco Santander atuando
+     nas seguintes frentes de desenvolvimento:
+    </string>
+
+    //SUBTEXTO1
+    <string name="text_1_title">Automatização Testes</string>
+
+    <string name="text_1">
+        No primeiro ano atuando no cliente trabalhei
+     realizando testes automatizados no aplicativo Santander Way também realizava
+     refatoração destes testes e participava de reuniões semanais para elaborar
+     melhorias nos demais testes.
+    </string>
+
+    //SUBTEXTO2
+    <string name="text_2_title">Suporte N1</string>
+
+    <string name="text_2">
+        Durante o ano de 2022 e metade do ano de
+    2023 atuei como desenvolvedor Android da mesa no atendimento de requisições e
+    incidentes abertos no aplicativo Santander Empresas. Minhas atividades eram de
+    monitorar bugs que poderiam ocorrer no mobile do PJ e realizar suas correções,
+    revisar código de outros desenvolvedores para verificar senão haveria problemas
+    futuros com a implementação.
+    </string>
+
+    //SUBTEXTO3
+    <string name="text_3_title">Suporte N2</string>
+
+    <string name="text_3">
+       Atuei entre os meses de Agosto a
+        Novembro do ano de 2023 como desenvolvedor Android da mesa fazendo a
+        extração de módulos que ainda estavam acoplados ao projeto legado do aplicativo
+        Santander Empresas, troca de certificados digitais que estavam no prazo de
+        vencimento, documentação de procedimentos e apoio ao time N1 para correções
+        de bugs ocorridos em produção.
+        Elaborei em conjunto com o time a documentação para novo onboarding que será
+        utilizados pelos futuros desenvolvedores a serem contratados cuidando
+        particularmente dos procedimentos relacionados ao desenvolvimento Android.
     </string>
 
     //LINGUAGENS
@@ -41,5 +76,29 @@
 
     //Labels
     <string name="circular_shape">circular progress value"</string>
+
+    //Projeto-AfimDeFeira
+    <string name="afim_de_feira">AfimDeFeira"</string>
+
+    <string name="descAfimDeFeira">
+        Projeto feito com o objetivo de auxiliar as pessoas a encontrar as feiras livres na zona
+        metropolitana de São Paulo.
+    </string>
+
+    //Projeto-GitHub Repositorios
+    <string name="github">Repositories"</string>
+
+    <string name="descGitHub">
+        Projeto visa mostrar meus conhecimentos em tratar chamadas a APIs utilizando a API do github
+        que retorna os repositórios com maior quantidade de pullrequests.  .
+    </string>
+
+    //Projeto-Portifólio
+    <string name="portifile">Portifile"</string>
+
+    <string name="descPortifile">
+        Criado projeto com a intenção de mostrar meus conhecimentos utilizando o Compose  .
+    </string>
+
 
 </resources>

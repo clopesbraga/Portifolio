@@ -3,12 +3,13 @@ package com.example.cleitonportifile
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.paddingFromBaseline
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.BottomAppBar
@@ -21,9 +22,9 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -43,6 +44,7 @@ import com.example.cleitonportifile.sample.observabilitySkills
 import com.example.cleitonportifile.sample.testsSkills
 import com.example.cleitonportifile.screens.AnimationScreen
 import com.example.cleitonportifile.screens.MainScreen
+import com.example.cleitonportifile.screens.ProjectScreen
 import com.example.cleitonportifile.ui.theme.CleitonPortifileTheme
 
 class MainActivity : ComponentActivity() {
@@ -96,15 +98,27 @@ class MainActivity : ComponentActivity() {
                         }
                         composable(route = "Projetos") {
 
-                            Box(
+                            Column(
                                 Modifier
                                     .fillMaxSize()
-                                    .background(Color.Blue)
+                                    .paddingFromBaseline(100.dp)
                             ) {
-                                Text(
-                                    text = "Projetos",
-                                    Modifier.align(Alignment.Center),
-                                    fontSize = 64.sp
+                                ProjectScreen(
+                                    stringResource(id= R.string.afim_de_feira),
+                                    stringResource(id = R.string.descAfimDeFeira),
+                                    R.drawable.ic_logo_afimdefeira
+                                )
+
+                                ProjectScreen(
+                                    stringResource(id= R.string.github),
+                                    stringResource(id = R.string.descGitHub),
+                                    R.drawable.ic_logo_githubrepo
+                                )
+
+                                ProjectScreen(
+                                    stringResource(id= R.string.portifile),
+                                    stringResource(id = R.string.descPortifile),
+                                    R.drawable.jetpackicon
                                 )
                             }
 
